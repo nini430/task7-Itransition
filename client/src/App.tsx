@@ -12,7 +12,7 @@ function App() {
 
   useEffect(()=>{
     if(!socket) {
-      setSocket(io('http://localhost:7000'));
+      setSocket(io('https://two-live-games.onrender.com'));
     }
   },[socket])
   return (
