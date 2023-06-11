@@ -14,7 +14,7 @@ const ioListen = (io: InstanceType<typeof Server>) => {
       socket.to(roomName).emit('second-player-joined');
     });
     //tic-tac-toe-only logic start
-    socket.on('add-move', ({ symbol, position, roomName }) => {
+    socket.on('add-move', ({ symbol, position, roomName }:{symbol:string,position:any,roomName:string}) => {
       console.log('at least', roomName);
       socket.to(roomName).emit('receive-move', { symbol, position });
     })
