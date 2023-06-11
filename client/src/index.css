@@ -1,0 +1,15 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background:rgb(82, 180, 237);
+}
+
+
+.ant-modal-content,.ant-modal-header {
+  background:rgb(199, 224, 239) !important;
+  color:white !important;
+}
